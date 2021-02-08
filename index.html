@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>ChatAR</title>
+</head>
+<body>
+
+    <div class="container">
+        <header></header>
+
+        
+        
+        <section class="sign" id="sign">
+            <header class="sign__header">
+                <img class="sign__header-icon" src="" alt="">
+            </header>
+            <div class="sign__content">
+                <form class="signin sign-flex sign-style">
+                    <label class="sign__label">Name</label>
+                    <input class="sign__inp sign__inp-in" id="inName" type="text" placeholder="Enter name">
+                    <label class="sign__label">Password</label>
+                    <input class="sign__inp sign__inp-in" id="inPass" type="password" placeholder="Enter password">
+                    <button class="btn" id="inBtn" type="submit">Sign in</button>
+                </form>
+            
+                <form action="POST" class="signup sign-flex sign-style">
+                    <label class="sign__label">Name</label>
+                    <input class="sign__inp" id="upName" type="text" placeholder="Create name">
+                    <label class="sign__label">Password</label>
+                    <input class="sign__inp sign__inp-up" id="upPass" type="password" placeholder="Create password">
+                    <label class="sign__label">Password</label>
+                    <input class="sign__inp sign__inp-up" id="upPassConf" type="password" placeholder="Confirm password">
+                    <button class="btn" id="upBtn" type="submit">Registration</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="chat" id="chat">
+            <header class="chat__header">
+                <h3 class="chat__header-title">
+                    ChatAR
+                </h3>
+            </header>
+        
+            <div class="chat__message" id="chatMsg">
+                <!--<div class="chat__user">
+                    <h3 class="chat__user-name">FastAR</h3>
+                    <p class="chat__user-message">Hello</p>
+                </div>
+        
+                <div class="chat__user">
+                    <h3 class="chat__user-name">SlowAR</h3>
+                    <p class="chat__user-message">Hi! How are you?</p>
+                </div>-->
+            </div>
+        
+            <div class="chat__mymessage">
+                <header class="mymsg__header">
+                    <h3 class="mymsg__header-name" id="chatName"></h3>
+                    <button class="mymsg__header-logout" id="outBtn">LogOut</button>
+                </header>
+                <div class="chat__mymessage-br">
+                    <textarea class="chat__place" id="textarea"></textarea>
+                    <button class="send__btn" id="chatBtn">
+                        <img src="/assets/images/direct.png" alt="" 
+                        class="send__btn-icon" width="25" height="25">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer></footer>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
