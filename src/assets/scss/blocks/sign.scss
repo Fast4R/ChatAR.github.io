@@ -1,0 +1,112 @@
+.sign{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.hidden__sign{
+        display: none;
+    }
+}
+
+.sign__content{
+    display: flex;
+}
+
+.sign__label{
+    margin-bottom: 0.5rem;
+
+    font-family: sans-serif;
+    color: $black;
+
+    @include breakpoint($breakpoint-tablet){
+        font-size: 1rem;
+    }
+
+    @include breakpoint($breakpoint-mobile){
+        font-size: .5rem;
+    }
+}
+
+.sign-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-style{
+    margin: auto;
+    padding: 5rem 3rem;
+
+    background-color: $white;
+    border-radius: .3rem;
+    box-shadow: 5px 5px 0 rgb(1, 0, 33);
+
+    &:last-child{
+        margin-left: 3rem;
+
+        @include breakpoint($breakpoint-mobile){
+            margin-left: 1rem;
+        }
+    }
+
+    @include breakpoint($breakpoint-tablet){
+        padding: 2rem 1.5rem;
+    }
+}
+
+.sign__inp{
+    padding: .5rem .8rem;
+    margin-bottom: 2rem;
+
+    border: none;
+    background: none;
+
+    border-radius: .3rem;
+    border-bottom: .15rem solid rgba($black, .5);
+
+    transform: rotateZ(-5deg);
+
+    transition: border-bottom .3s ease-in-out,
+    transform .3s linear;
+
+    &-in{
+        @include breakpoint($breakpoint-tablet){
+            font-size: 1rem;
+        }
+
+        @include breakpoint($breakpoint-mobile){
+            font-size: .3rem;
+        }
+    }
+
+    &-up{
+        @include breakpoint($breakpoint-tablet){
+            font-size: 1rem;
+        }
+        
+        @include breakpoint($breakpoint-mobile){
+            font-size: .3rem;
+        }
+    }
+
+    &:focus{
+        border-bottom: .15rem solid rgba(#2d5afc, .5);
+        transform: rotateZ(0deg);
+    }
+
+    @include breakpoint($breakpoint-tablet){
+        padding: .3rem .5rem;
+    }
+
+    @include breakpoint($breakpoint-mobile){
+        padding: .2rem .4rem;
+    }
+}
+
+#upName{
+    @include breakpoint($breakpoint-mobile){
+        font-size: 0.5rem;
+    }
+}

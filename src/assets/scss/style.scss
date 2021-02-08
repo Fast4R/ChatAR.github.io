@@ -1,0 +1,19 @@
+@import "mixins";
+@import "vars";
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $bg;
+    font-size: 21px;
+    font-family: Regular;
+    color: white;
+}
+
+@import "vendor/reset.scss";
+@import "blocks/container";
+@import "blocks/sign";
+@import "blocks/btn";
+@import "blocks/chat";

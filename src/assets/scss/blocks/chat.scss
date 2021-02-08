@@ -1,0 +1,114 @@
+.chat{
+    height: 100vh;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.show__chat{
+        display: flex;
+    }
+}
+
+.chat__header{
+    width: 40rem;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+
+    background-color: $white;
+    border-radius: 3rem 3rem 0 0;
+
+    &-title{
+        font-family: sans-serif;
+        color: $black;
+        text-align: center;
+    }
+}
+
+.chat__message{
+    width: 40rem;
+    height: 25rem;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+    overflow-y: scroll;
+
+    background-color: $white;
+    color: $black;
+}
+
+.chat__user{
+    padding: 1rem 1rem .5rem 1rem;
+    margin-bottom: 1rem;
+
+    box-shadow: 0 0 7px $bg;
+    font-family: sans-serif;
+
+    &-name{
+        margin-bottom: 0.5rem;
+    }
+
+    &-message{
+        padding: .5rem;
+
+        box-shadow: 0 0 5px $black;
+        border-radius: .2rem;
+    }
+}
+
+.chat__mymessage{
+    width: 40rem;
+    height: 10rem;
+    padding: 1rem 1rem 1rem;
+    margin-bottom: 1rem;
+
+    position: relative;
+
+    background-color: $white;
+    border-radius: 0 0 3rem 3rem;
+
+    &-br{
+        height: 80%;
+        border: .2rem solid $bg;
+        border-radius: 0 0 3rem 3rem;
+    }
+}
+
+.chat__place{
+    width: 70%;
+    height: 92%;
+
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
+    resize: none;
+    border: none;
+
+    border-radius: 0 0 0 3rem;
+}
+
+.mymsg__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 0.5rem;
+
+    &-name{
+        font-weight: 700;
+        font-family: sans-serif;
+        color: $black;
+    }
+
+    &-logout{
+        padding: .2rem;
+
+        border: none;
+        background: none;
+
+        &:hover{
+            color: $bg;
+            text-decoration: underline;
+        }
+    }
+}
