@@ -53,4 +53,16 @@
         0 0 10px rgba($bg, .8);
         transform: rotateZ(1080deg) scale(1.1);
     }
+
+    &-icon{
+        @include breakpoint($breakpoint-chat-tablet){
+            width: 15px;
+            height: 15px;
+        } 
+    }
+
+    @include breakpoint($breakpoint-chat-tablet){
+        width: 2.5rem;
+        height: 2.5rem;
+    } 
 }
