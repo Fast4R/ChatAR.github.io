@@ -451,6 +451,14 @@ textarea {
   .send__btn:hover {
     box-shadow: 0 0 10px rgba(28, 5, 176, 0.3), 0 0 10px rgba(28, 5, 176, 0.5), 0 0 10px rgba(28, 5, 176, 0.8);
     transform: rotateZ(1080deg) scale(1.1); }
+  @media screen and (max-width: 690px) {
+    .send__btn-icon {
+      width: 15px;
+      height: 15px; } }
+  @media screen and (max-width: 690px) {
+    .send__btn {
+      width: 2.5rem;
+      height: 2.5rem; } }
 
 .chat {
   height: 100vh;
@@ -471,6 +479,12 @@ textarea {
     font-family: sans-serif;
     color: #000;
     text-align: center; }
+  @media screen and (max-width: 690px) {
+    .chat__header {
+      width: 25rem; } }
+  @media screen and (max-width: 450px) {
+    .chat__header {
+      width: 15rem; } }
 
 .chat__message {
   width: 40rem;
@@ -480,6 +494,12 @@ textarea {
   overflow-y: scroll;
   background-color: #fff;
   color: #000; }
+  @media screen and (max-width: 690px) {
+    .chat__message {
+      width: 25rem; } }
+  @media screen and (max-width: 450px) {
+    .chat__message {
+      width: 15rem; } }
 
 .chat__user {
   padding: 1rem 1rem .5rem 1rem;
@@ -488,10 +508,20 @@ textarea {
   font-family: sans-serif; }
   .chat__user-name {
     margin-bottom: 0.5rem; }
+    @media screen and (max-width: 450px) {
+      .chat__user-name {
+        font-size: 0.9rem; } }
   .chat__user-message {
     padding: .5rem;
     box-shadow: 0 0 5px #000;
     border-radius: .2rem; }
+    @media screen and (max-width: 450px) {
+      .chat__user-message {
+        font-size: 0.8rem; } }
+  @media screen and (max-width: 450px) {
+    .chat__user {
+      padding: .5rem 1rem;
+      margin-bottom: .8rem; } }
 
 .chat__mymessage {
   width: 40rem;
@@ -505,6 +535,12 @@ textarea {
     height: 80%;
     border: 0.2rem solid #1c05b0;
     border-radius: 0 0 3rem 3rem; }
+  @media screen and (max-width: 690px) {
+    .chat__mymessage {
+      width: 25rem; } }
+  @media screen and (max-width: 450px) {
+    .chat__mymessage {
+      width: 15rem; } }
 
 .chat__place {
   width: 70%;
@@ -514,6 +550,9 @@ textarea {
   resize: none;
   border: none;
   border-radius: 0 0 0 3rem; }
+  @media screen and (max-width: 450px) {
+    .chat__place {
+      font-size: 0.9rem; } }
 
 .mymsg__header {
   display: flex;

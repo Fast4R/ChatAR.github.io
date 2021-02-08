@@ -404,6 +404,18 @@ textarea {
     color: #000;
 }
 
+@media screen and (max-width: 720px) {
+    .sign__label {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sign__label {
+        font-size: .5rem;
+    }
+}
+
 .sign-flex {
     display: -ms-flexbox;
     display: flex;
@@ -423,6 +435,18 @@ textarea {
     margin-left: 3rem;
 }
 
+@media screen and (max-width: 580px) {
+    .sign-style:last-child {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .sign-style {
+        padding: 2rem 1.5rem;
+    }
+}
+
 .sign__inp {
     padding: .5rem .8rem;
     margin-bottom: 2rem;
@@ -437,10 +461,52 @@ textarea {
     transition: border-bottom .3s ease-in-out, transform .3s linear, -webkit-transform .3s linear;
 }
 
+@media screen and (max-width: 720px) {
+    .sign__inp-in {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sign__inp-in {
+        font-size: .3rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .sign__inp-up {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sign__inp-up {
+        font-size: .3rem;
+    }
+}
+
 .sign__inp:focus {
     border-bottom: 0.15rem solid rgba(45, 90, 252, 0.5);
     -webkit-transform: rotateZ(0deg);
     transform: rotateZ(0deg);
+}
+
+@media screen and (max-width: 720px) {
+    .sign__inp {
+        padding: .3rem .5rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .sign__inp {
+        padding: .2rem .4rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #upName {
+        font-size: 0.5rem;
+    }
 }
 
 .btn {
@@ -458,6 +524,20 @@ textarea {
 .btn:hover {
     background-color: #14047e;
     border-radius: 1rem 0 1rem 0;
+}
+
+@media screen and (max-width: 720px) {
+    .btn {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .btn {
+        font-size: .7rem;
+        margin-top: 2rem;
+    }
 }
 
 .send__btn {
